@@ -1,0 +1,127 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #6f7dff, #4f6cff);
+  margin: 0;
+  padding: 0;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.App {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  max-width: 450px;
+  width: 90%;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.App:hover {
+  transform: scale(1.03); 
+}
+
+h1 {
+  margin-bottom: 24px;
+  font-size: 30px;
+  color: #333;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.stars {
+  font-size: 3rem;
+  cursor: pointer;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px; 
+}
+
+.star {
+  color: #e0e0e0; 
+  transition: transform 0.3s ease, color 0.3s ease;
+  user-select: none;
+}
+
+.star.filled {
+  color: #fcd34d; 
+  transform: scale(1.25); 
+}
+
+.star:hover {
+  color: #fcd34d;
+  transform: scale(1.4); 
+}
+
+.star:active {
+  transform: scale(1.5); 
+  color: #f59e0b; 
+}
+
+.star:focus {
+  outline: none;
+  box-shadow: 0 0 8px 2px #fcd34d;
+}
+
+button {
+  padding: 12px 25px;
+  background-color: #4f6cff;
+  color: white;
+  border: none;
+  border-radius: 50px; 
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #3b54c4;
+}
+
+button:active {
+  transform: scale(0.95); 
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 10px 4px rgba(72, 161, 61, 0.8);
+}
+
+.rating-box h2 {
+  font-size: 22px;
+  color: #444;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #333;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 15px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4f6cff;
+  box-shadow: 0 0 8px 2px rgba(79, 108, 255, 0.4);
+}
+
+input::placeholder {
+  color: #888;
+  font-style: italic;
+}
